@@ -119,7 +119,7 @@ Wau, BSOD.
      run
 
 #### Results
-todo: put a link here
+[https://github.com/Augustus58/cybersecuritybase-project-2/blob/master/snmp_enum_results.txt](https://github.com/Augustus58/cybersecuritybase-project-2/blob/master/snmp_enum_results.txt)
 
 #### Comments
 A lot of useful information can be acquired with this one. E.g. all users and running processes are very critical data. Tried to find SIDs to enable. Found SID 516, but no alerts with that.
