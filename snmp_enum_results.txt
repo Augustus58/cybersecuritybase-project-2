@@ -1,0 +1,755 @@
+[*] System information:
+
+Host IP                       : 172.28.128.3
+Hostname                      : metasploitable3
+Description                   : Hardware: Intel64 Family 6 Model 78 Stepping 3 AT/AT COMPATIBLE - Software: Windows Version 6.1 (Build 7601 Multiprocessor Free)
+Contact                       : -
+Location                      : -
+Uptime snmp                   : 13:18:54.42
+Uptime system                 : 13:18:40.29
+System date                   : 2017-4-10 04:24:58.5
+
+[*] User accounts:
+
+["sshd"]
+["Guest"]
+["greedo"]
+["vagrant"]
+["han_solo"]
+["kylo_ren"]
+["boba_fett"]
+["chewbacca"]
+["ben_kenobi"]
+["jabba_hutt"]
+["artoo_detoo"]
+["c_three_pio"]
+["darth_vader"]
+["leah_organa"]
+["sshd_server"]
+["jarjar_binks"]
+["Administrator"]
+["luke_skywalker"]
+["anakin_skywalker"]
+["lando_calrissian"]
+
+[*] Network information:
+
+IP forwarding enabled         : no
+Default TTL                   : 128
+TCP segments received         : 3938411
+TCP segments sent             : 3935709
+TCP segments retrans          : 1175
+Input datagrams               : 15757
+Delivered datagrams           : 16644
+Output datagrams              : 2795718
+
+[*] Network interfaces:
+
+Interface                     : [ up ] Software Loopback Interface 1
+Id                            : 1
+Mac Address                   : :::::
+Type                          : softwareLoopback
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (SSTP)
+Id                            : 2
+Mac Address                   : :::::
+Type                          : unknown
+Speed                         : 1073 Mbps
+MTU                           : 4091
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (L2TP)
+Id                            : 3
+Mac Address                   : :::::
+Type                          : unknown
+Speed                         : 1073 Mbps
+MTU                           : 1460
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (PPTP)
+Id                            : 4
+Mac Address                   : :::::
+Type                          : unknown
+Speed                         : 1073 Mbps
+MTU                           : 1464
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (PPPOE)
+Id                            : 5
+Mac Address                   : :::::
+Type                          : ppp
+Speed                         : 1073 Mbps
+MTU                           : 1494
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (IPv6)
+Id                            : 6
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (Network Monitor)
+Id                            : 7
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (IP)
+Id                            : 8
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ down ] RAS Async Adapter
+Id                            : 9
+Mac Address                   : 20:41:53:59:4e:ff
+Type                          : ppp
+Speed                         : 0 Mbps
+MTU                           : 0
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (IKEv2)
+Id                            : 10
+Mac Address                   : 00:00:00:00:00:00
+Type                          : unknown
+Speed                         : 0 Mbps
+MTU                           : 1480
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter
+Id                            : 11
+Mac Address                   : 08:00:27:61:31:54
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 716817
+Out octets                    : 408859
+
+Interface                     : [ up ] Microsoft ISATAP Adapter
+Id                            : 12
+Mac Address                   : 00:00:00:00:00:00
+Type                          : unknown
+Speed                         : 0 Mbps
+MTU                           : 1280
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] Teredo Tunneling Pseudo-Interface
+Id                            : 13
+Mac Address                   : 00:00:00:00:00:00
+Type                          : unknown
+Speed                         : 0 Mbps
+MTU                           : 1472
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter #2
+Id                            : 14
+Mac Address                   : 08:00:27:b3:15:40
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 4898093
+Out octets                    : 2116757
+
+Interface                     : [ up ] Microsoft ISATAP Adapter #2
+Id                            : 15
+Mac Address                   : 00:00:00:00:00:00
+Type                          : unknown
+Speed                         : 0 Mbps
+MTU                           : 1280
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter-QoS Packet Scheduler-0000
+Id                            : 16
+Mac Address                   : 08:00:27:61:31:54
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 716817
+Out octets                    : 408859
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter-WFP LightWeight Filter-0000
+Id                            : 17
+Mac Address                   : 08:00:27:61:31:54
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 716817
+Out octets                    : 408859
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter #2-QoS Packet Scheduler-0000
+Id                            : 18
+Mac Address                   : 08:00:27:b3:15:40
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 4898093
+Out octets                    : 2116757
+
+Interface                     : [ up ] Intel(R) PRO/1000 MT Desktop Adapter #2-WFP LightWeight Filter-0000
+Id                            : 19
+Mac Address                   : 08:00:27:b3:15:40
+Type                          : ethernet-csmacd
+Speed                         : 1000 Mbps
+MTU                           : 1500
+In octets                     : 4898093
+Out octets                    : 2116757
+
+Interface                     : [ up ] WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+Id                            : 20
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (IP)-QoS Packet Scheduler-0000
+Id                            : 21
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+Interface                     : [ up ] WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+Id                            : 22
+Mac Address                   : 42:42:20:52:41:53
+Type                          : ethernet-csmacd
+Speed                         : 1073 Mbps
+MTU                           : 1500
+In octets                     : 0
+Out octets                    : 0
+
+
+[*] Network IP:
+
+Id                  IP Address          Netmask             Broadcast
+11                  10.0.2.15           255.255.255.0       1
+1                   127.0.0.1           255.0.0.0           1
+14                  172.28.128.3        255.255.255.0       1
+
+[*] Routing information:
+
+Destination         Next hop            Mask                Metric
+0.0.0.0             10.0.2.2            0.0.0.0             10
+10.0.2.0            10.0.2.15           255.255.255.0       266
+10.0.2.15           10.0.2.15           255.255.255.255     266
+10.0.2.255          10.0.2.15           255.255.255.255     266
+127.0.0.0           127.0.0.1           255.0.0.0           306
+127.0.0.1           127.0.0.1           255.255.255.255     306
+127.255.255.255     127.0.0.1           255.255.255.255     306
+172.28.128.0        172.28.128.3        255.255.255.0       266
+172.28.128.3        172.28.128.3        255.255.255.255     266
+172.28.128.255      172.28.128.3        255.255.255.255     266
+224.0.0.0           127.0.0.1           240.0.0.0           306
+255.255.255.255     127.0.0.1           255.255.255.255     306
+
+[*] TCP connections and listening ports:
+
+Local address       Local port          Remote address      Remote port         State
+0.0.0.0             22                  0.0.0.0             0                   listen
+0.0.0.0             135                 0.0.0.0             0                   listen
+0.0.0.0             3000                0.0.0.0             0                   listen
+0.0.0.0             3306                0.0.0.0             0                   listen
+0.0.0.0             3389                0.0.0.0             0                   listen
+0.0.0.0             8009                0.0.0.0             0                   listen
+0.0.0.0             8019                0.0.0.0             0                   listen
+0.0.0.0             8020                0.0.0.0             0                   listen
+0.0.0.0             8022                0.0.0.0             0                   listen
+0.0.0.0             8027                0.0.0.0             0                   listen
+0.0.0.0             8028                0.0.0.0             0                   listen
+0.0.0.0             8031                0.0.0.0             0                   listen
+0.0.0.0             8032                0.0.0.0             0                   listen
+0.0.0.0             8282                0.0.0.0             0                   listen
+0.0.0.0             8383                0.0.0.0             0                   listen
+0.0.0.0             8443                0.0.0.0             0                   listen
+0.0.0.0             8444                0.0.0.0             0                   listen
+0.0.0.0             8585                0.0.0.0             0                   listen
+0.0.0.0             49152               0.0.0.0             0                   listen
+0.0.0.0             49153               0.0.0.0             0                   listen
+0.0.0.0             49154               0.0.0.0             0                   listen
+0.0.0.0             49178               0.0.0.0             0                   listen
+0.0.0.0             49216               0.0.0.0             0                   listen
+0.0.0.0             49418               0.0.0.0             0                   listen
+10.0.2.15           139                 0.0.0.0             0                   listen
+10.0.2.15           9300                10.0.2.15           49186               established
+10.0.2.15           9300                10.0.2.15           49187               established
+10.0.2.15           9300                10.0.2.15           49188               established
+10.0.2.15           9300                10.0.2.15           49189               established
+10.0.2.15           9300                10.0.2.15           49190               established
+10.0.2.15           9300                10.0.2.15           49191               established
+10.0.2.15           9300                10.0.2.15           49192               established
+10.0.2.15           9300                10.0.2.15           49193               established
+10.0.2.15           9300                10.0.2.15           49194               established
+10.0.2.15           9300                10.0.2.15           49195               established
+10.0.2.15           9300                10.0.2.15           49196               established
+10.0.2.15           9300                10.0.2.15           49197               established
+10.0.2.15           9300                10.0.2.15           49198               established
+10.0.2.15           49186               10.0.2.15           9300                established
+10.0.2.15           49187               10.0.2.15           9300                established
+10.0.2.15           49188               10.0.2.15           9300                established
+10.0.2.15           49189               10.0.2.15           9300                established
+10.0.2.15           49190               10.0.2.15           9300                established
+10.0.2.15           49191               10.0.2.15           9300                established
+10.0.2.15           49192               10.0.2.15           9300                established
+10.0.2.15           49193               10.0.2.15           9300                established
+10.0.2.15           49194               10.0.2.15           9300                established
+10.0.2.15           49195               10.0.2.15           9300                established
+10.0.2.15           49196               10.0.2.15           9300                established
+10.0.2.15           49197               10.0.2.15           9300                established
+10.0.2.15           49198               10.0.2.15           9300                established
+127.0.0.1           8005                0.0.0.0             0                   listen
+127.0.0.1           8019                127.0.0.1           49466               established
+127.0.0.1           8019                127.0.0.1           49471               established
+127.0.0.1           8019                127.0.0.1           49472               established
+127.0.0.1           8019                127.0.0.1           49475               established
+127.0.0.1           8019                127.0.0.1           49476               established
+127.0.0.1           8019                127.0.0.1           49477               established
+127.0.0.1           8027                127.0.0.1           49463               established
+127.0.0.1           8028                127.0.0.1           53814               established
+127.0.0.1           8028                127.0.0.1           54957               established
+127.0.0.1           31000               127.0.0.1           32000               established
+127.0.0.1           32000               0.0.0.0             0                   listen
+127.0.0.1           32000               127.0.0.1           31000               established
+127.0.0.1           49156               127.0.0.1           49157               established
+127.0.0.1           49157               127.0.0.1           49156               established
+127.0.0.1           49159               127.0.0.1           49160               established
+127.0.0.1           49160               127.0.0.1           49159               established
+127.0.0.1           49161               127.0.0.1           49162               established
+127.0.0.1           49162               127.0.0.1           49161               established
+127.0.0.1           49163               127.0.0.1           49164               established
+127.0.0.1           49164               127.0.0.1           49163               established
+127.0.0.1           49165               127.0.0.1           49166               established
+127.0.0.1           49166               127.0.0.1           49165               established
+127.0.0.1           49167               127.0.0.1           49168               established
+127.0.0.1           49168               127.0.0.1           49167               established
+127.0.0.1           49169               127.0.0.1           49170               established
+127.0.0.1           49170               127.0.0.1           49169               established
+127.0.0.1           49171               127.0.0.1           49172               established
+127.0.0.1           49172               127.0.0.1           49171               established
+127.0.0.1           49173               127.0.0.1           49174               established
+127.0.0.1           49174               127.0.0.1           49173               established
+127.0.0.1           49176               127.0.0.1           49177               established
+127.0.0.1           49177               127.0.0.1           49176               established
+127.0.0.1           49179               127.0.0.1           49180               established
+127.0.0.1           49180               127.0.0.1           49179               established
+127.0.0.1           49184               127.0.0.1           49185               established
+127.0.0.1           49185               127.0.0.1           49184               established
+127.0.0.1           49199               127.0.0.1           49200               established
+127.0.0.1           49200               127.0.0.1           49199               established
+127.0.0.1           49201               127.0.0.1           49202               established
+127.0.0.1           49202               127.0.0.1           49201               established
+127.0.0.1           49203               127.0.0.1           49204               established
+127.0.0.1           49204               127.0.0.1           49203               established
+127.0.0.1           49205               127.0.0.1           49206               established
+127.0.0.1           49206               127.0.0.1           49205               established
+127.0.0.1           49207               127.0.0.1           49208               established
+127.0.0.1           49208               127.0.0.1           49207               established
+127.0.0.1           49209               127.0.0.1           49210               established
+127.0.0.1           49210               127.0.0.1           49209               established
+127.0.0.1           49212               127.0.0.1           49213               established
+127.0.0.1           49213               127.0.0.1           49212               established
+127.0.0.1           49214               127.0.0.1           49215               established
+127.0.0.1           49215               127.0.0.1           49214               established
+127.0.0.1           49217               127.0.0.1           49218               established
+127.0.0.1           49218               127.0.0.1           49217               established
+127.0.0.1           49219               127.0.0.1           49220               established
+127.0.0.1           49220               127.0.0.1           49219               established
+127.0.0.1           49221               127.0.0.1           49222               established
+127.0.0.1           49222               127.0.0.1           49221               established
+127.0.0.1           49223               127.0.0.1           49224               established
+127.0.0.1           49224               127.0.0.1           49223               established
+127.0.0.1           49225               127.0.0.1           49226               established
+127.0.0.1           49226               127.0.0.1           49225               established
+127.0.0.1           49227               127.0.0.1           49228               established
+127.0.0.1           49228               127.0.0.1           49227               established
+127.0.0.1           49229               127.0.0.1           49230               established
+127.0.0.1           49230               127.0.0.1           49229               established
+127.0.0.1           49231               127.0.0.1           49232               established
+127.0.0.1           49232               127.0.0.1           49231               established
+127.0.0.1           49233               127.0.0.1           49234               established
+127.0.0.1           49234               127.0.0.1           49233               established
+127.0.0.1           49235               127.0.0.1           49236               established
+127.0.0.1           49236               127.0.0.1           49235               established
+127.0.0.1           49237               127.0.0.1           49238               established
+127.0.0.1           49238               127.0.0.1           49237               established
+127.0.0.1           49239               127.0.0.1           49240               established
+127.0.0.1           49240               127.0.0.1           49239               established
+127.0.0.1           49241               127.0.0.1           49242               established
+127.0.0.1           49242               127.0.0.1           49241               established
+127.0.0.1           49243               127.0.0.1           49244               established
+127.0.0.1           49244               127.0.0.1           49243               established
+127.0.0.1           49245               127.0.0.1           49246               established
+127.0.0.1           49246               127.0.0.1           49245               established
+127.0.0.1           49247               127.0.0.1           49248               established
+127.0.0.1           49248               127.0.0.1           49247               established
+127.0.0.1           49249               127.0.0.1           49250               established
+127.0.0.1           49250               127.0.0.1           49249               established
+127.0.0.1           49251               127.0.0.1           49252               established
+127.0.0.1           49252               127.0.0.1           49251               established
+127.0.0.1           49253               127.0.0.1           49254               established
+127.0.0.1           49254               127.0.0.1           49253               established
+127.0.0.1           49255               127.0.0.1           49256               established
+127.0.0.1           49256               127.0.0.1           49255               established
+127.0.0.1           49257               127.0.0.1           49258               established
+127.0.0.1           49258               127.0.0.1           49257               established
+127.0.0.1           49260               127.0.0.1           49261               established
+127.0.0.1           49261               127.0.0.1           49260               established
+127.0.0.1           49455               127.0.0.1           49456               established
+127.0.0.1           49456               127.0.0.1           49455               established
+127.0.0.1           49459               127.0.0.1           49460               established
+127.0.0.1           49460               127.0.0.1           49459               established
+127.0.0.1           49461               127.0.0.1           49462               established
+127.0.0.1           49462               127.0.0.1           49461               established
+127.0.0.1           49463               127.0.0.1           8027                established
+127.0.0.1           49466               127.0.0.1           8019                established
+127.0.0.1           49471               127.0.0.1           8019                established
+127.0.0.1           49472               127.0.0.1           8019                established
+127.0.0.1           49475               127.0.0.1           8019                established
+127.0.0.1           49476               127.0.0.1           8019                established
+127.0.0.1           49477               127.0.0.1           8019                established
+127.0.0.1           53814               127.0.0.1           8028                established
+127.0.0.1           54957               127.0.0.1           8028                established
+127.0.0.1           59508               127.0.0.1           8020                timeWait
+127.0.0.1           59511               127.0.0.1           8020                timeWait
+127.0.0.1           59514               127.0.0.1           8020                timeWait
+127.0.0.1           59517               127.0.0.1           8020                timeWait
+127.0.0.1           59519               127.0.0.1           8020                timeWait
+127.0.0.1           59522               127.0.0.1           8020                timeWait
+127.0.0.1           59524               127.0.0.1           8020                timeWait
+127.0.0.1           59528               127.0.0.1           8020                timeWait
+127.0.0.1           59529               127.0.0.1           8020                timeWait
+127.0.0.1           59533               127.0.0.1           8020                timeWait
+127.0.0.1           59535               127.0.0.1           8020                timeWait
+127.0.0.1           59538               127.0.0.1           8020                timeWait
+127.0.0.1           59540               127.0.0.1           8020                timeWait
+127.0.0.1           59543               127.0.0.1           8020                timeWait
+127.0.0.1           59546               127.0.0.1           8020                timeWait
+127.0.0.1           59548               127.0.0.1           8020                timeWait
+127.0.0.1           59551               127.0.0.1           8020                timeWait
+127.0.0.1           59553               127.0.0.1           8020                timeWait
+127.0.0.1           59556               127.0.0.1           8020                timeWait
+127.0.0.1           59558               127.0.0.1           8020                timeWait
+127.0.0.1           59562               127.0.0.1           8020                timeWait
+127.0.0.1           59563               127.0.0.1           8020                timeWait
+127.0.0.1           59566               127.0.0.1           8020                timeWait
+127.0.0.1           59577               127.0.0.1           8020                timeWait
+172.28.128.3        139                 0.0.0.0             0                   listen
+172.28.128.3        59568               172.28.128.1        8443                established
+172.28.128.3        59569               172.28.128.1        8443                established
+172.28.128.3        59570               172.28.128.1        8443                established
+172.28.128.3        59571               172.28.128.1        8443                established
+172.28.128.3        59572               172.28.128.1        8443                established
+172.28.128.3        59573               172.28.128.1        8443                established
+172.28.128.3        59574               172.28.128.1        8443                established
+172.28.128.3        59575               172.28.128.1        8443                established
+172.28.128.3        59576               172.28.128.1        8443                established
+172.28.128.3        59578               172.28.128.1        8443                established
+172.28.128.3        59579               172.28.128.1        8443                established
+172.28.128.3        59580               172.28.128.1        8443                established
+172.28.128.3        59581               172.28.128.1        8443                established
+
+[*] Listening UDP ports:
+
+Local address       Local port
+0.0.0.0             161
+0.0.0.0             5353
+0.0.0.0             5355
+0.0.0.0             33848
+0.0.0.0             54328
+10.0.2.15           137
+10.0.2.15           138
+127.0.0.1           50338
+127.0.0.1           60787
+127.0.0.1           60867
+172.28.128.3        137
+172.28.128.3        138
+
+[*] Network services:
+
+Index               Name
+0                   jmx
+1                   Power
+2                   Server
+3                   jenkins
+4                   IP Helper
+5                   DNS Client
+6                   wampapache
+7                   wampmysqld
+8                   DHCP Client
+9                   Workstation
+10                  SNMP Service
+11                  Plug and Play
+12                  Print Spooler
+13                  OpenSSH Server
+14                  Task Scheduler
+15                  Windows Update
+16                  Remote Registry
+17                  Windows Firewall
+18                  COM+ Event System
+19                  Windows Event Log
+20                  IPsec Policy Agent
+21                  Group Policy Client
+22                  Network Connections
+23                  RPC Endpoint Mapper
+24                  Software Protection
+25                  Network List Service
+26                  User Profile Service
+27                  Base Filtering Engine
+28                  Microsoft FTP Service
+29                  TCP/IP NetBIOS Helper
+30                  Cryptographic Services
+31                  Certificate Propagation
+32                  Remote Desktop Services
+33                  SPP Notification Service
+34                  Shell Hardware Detection
+35                  domain1 GlassFish Server
+36                  Apache Tomcat 8.0 Tomcat8
+37                  Diagnostic Policy Service
+38                  Security Accounts Manager
+39                  Network Location Awareness
+40                  Windows Font Cache Service
+41                  Remote Procedure Call (RPC)
+42                  DCOM Server Process Launcher
+43                  Remote Desktop Configuration
+44                  MEDC Server Component - Apache
+45                  Application Host Helper Service
+46                  Network Store Interface Service
+47                  Distributed Link Tracking Client
+48                  System Event Notification Service
+49                  World Wide Web Publishing Service
+50                  VirtualBox Guest Additions Service
+51                  Windows Management Instrumentation
+52                  Windows Process Activation Service
+53                  Distributed Transaction Coordinator
+54                  ManageEngine Desktop Central Server
+55                  Windows Licensing Monitoring Service
+56                  Desktop Window Manager Session Manager
+57                  Windows Remote Management (WS-Management)
+58                  MEDC Server Component - Notification Server
+59                  Elasticsearch 1.1.1 (elasticsearch-service-x64)
+60                  Remote Desktop Services UserMode Port Redirector
+
+[*] IIS server information:
+
+TotalBytesSentLowWord         : 0
+TotalBytesReceivedLowWord     : 0
+TotalFilesSent                : 0
+CurrentAnonymousUsers         : 0
+CurrentNonAnonymousUsers      : 0
+TotalAnonymousUsers           : 0
+TotalNonAnonymousUsers        : 0
+MaxAnonymousUsers             : 0
+MaxNonAnonymousUsers          : 0
+CurrentConnections            : 0
+MaxConnections                : 0
+ConnectionAttempts            : 0
+LogonAttempts                 : 0
+Gets                          : 0
+Posts                         : 0
+Heads                         : 0
+Others                        : 0
+CGIRequests                   : 0
+BGIRequests                   : 0
+NotFoundErrors                : 0
+
+[*] Storage information:
+
+Description                   : ["C:\\ Label:Windows 2008R2  Serial Number 98287801"]
+Device id                     : [#<SNMP::Integer:0x0000000e4bc518 @value=1>]
+Filesystem type               : ["Fixed Disk"]
+Device unit                   : [#<SNMP::Integer:0x0000000e59e698 @value=4096>]
+Memory size                   : 60.00 GB
+Memory used                   : 17.14 GB
+
+Description                   : ["Virtual Memory"]
+Device id                     : [#<SNMP::Integer:0x0000000e8a1660 @value=2>]
+Filesystem type               : ["Virtual Memory"]
+Device unit                   : [#<SNMP::Integer:0x0000000ea87830 @value=65536>]
+Memory size                   : 8.00 GB
+Memory used                   : 4.32 GB
+
+Description                   : ["Physical Memory"]
+Device id                     : [#<SNMP::Integer:0x0000000e972828 @value=3>]
+Filesystem type               : ["Ram"]
+Device unit                   : [#<SNMP::Integer:0x0000000e970a28 @value=65536>]
+Memory size                   : 4.00 GB
+Memory used                   : 2.93 GB
+
+
+[*] File system information:
+
+Index                         : 1
+Mount point                   :
+Remote mount point            : -
+Type                          : NTFS
+Access                        : 1
+Bootable                      : 1
+
+[*] Device information:
+
+Id                  Type                Status              Descr
+1                   Processor           running             Unknown Processor Type
+2                   Processor           running             Unknown Processor Type
+3                   Network             unknown             Software Loopback Interface 1
+4                   Network             unknown             WAN Miniport (SSTP)
+5                   Network             unknown             WAN Miniport (L2TP)
+6                   Network             unknown             WAN Miniport (PPTP)
+7                   Network             unknown             WAN Miniport (PPPOE)
+8                   Network             unknown             WAN Miniport (IPv6)
+9                   Network             unknown             WAN Miniport (Network Monitor)
+10                  Network             unknown             WAN Miniport (IP)
+11                  Network             unknown             RAS Async Adapter
+12                  Network             unknown             WAN Miniport (IKEv2)
+13                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter
+14                  Network             unknown             Microsoft ISATAP Adapter
+15                  Network             unknown             Teredo Tunneling Pseudo-Interface
+16                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter #2
+17                  Network             unknown             Microsoft ISATAP Adapter #2
+18                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter-QoS Packet Scheduler-0000
+19                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter-WFP LightWeight Filter-0000
+20                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter #2-QoS Packet Scheduler-000
+21                  Network             unknown             Intel(R) PRO/1000 MT Desktop Adapter #2-WFP LightWeight Filter-0
+22                  Network             unknown             WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+23                  Network             unknown             WAN Miniport (IP)-QoS Packet Scheduler-0000
+24                  Network             unknown             WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+25                  Disk Storage        running             Fixed Disk
+26                  Keyboard            running             IBM enhanced (101- or 102-key) keyboard, Subtype=(0)
+
+[*] Software components:
+
+Index               Name
+1                   7-Zip 16.04 (x64)
+2                   Microsoft .NET Framework 4 Client Profile
+3                   Microsoft .NET Framework 4 Extended
+4                   OpenSSH for Windows 7.1p1-1 (remove only)
+5                   Oracle VM VirtualBox Guest Additions 5.1.18
+6                   Java 8 Update 121 (64-bit)
+7                   Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
+8                   Java SE Development Kit 8 Update 121 (64-bit)
+9                   Microsoft .NET Framework 4 Extended
+10                  Microsoft .NET Framework 4 Client Profile
+
+[*] Processes:
+
+Id                  Status              Name                Path                Parameters
+1                   running             System Idle Process
+4                   running             System
+136                 running             svchost.exe
+252                 running             smss.exe            \SystemRoot\System32\
+324                 running             csrss.exe           %SystemRoot%\system32\ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:User
+376                 running             wininit.exe
+388                 running             csrss.exe           %SystemRoot%\system32\ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:User
+424                 running             winlogon.exe
+468                 running             services.exe        C:\Windows\system32\
+492                 running             lsass.exe           C:\Windows\system32\
+500                 running             lsm.exe             C:\Windows\system32\
+580                 running             VBoxTray.exe        C:\Windows\System32\
+620                 running             svchost.exe
+636                 running             svchost.exe
+680                 running             VBoxService.exe     C:\Windows\System32\
+736                 running             svchost.exe
+816                 running             svchost.exe
+824                 running             taskeng.exe                             {87B2AA4B-CC92-415A-A59E-625ED3E5CDC7}
+884                 running             postgres.exe                            "--forkbackend" "9208"
+892                 running             svchost.exe
+944                 running             svchost.exe
+972                 running             svchost.exe
+984                 running             svchost.exe
+1124                running             spoolsv.exe
+1156                running             svchost.exe
+1200                running             svchost.exe
+1264                running             cmd.exe                                 /c "C:\Program Files\Rails_Server\start_rails_server.bat"
+1284                running             conhost.exe         \??\C:\Windows\system32\
+1296                running             java.exe            C:\ProgramData\Oracle\Java\javapath\-jar "C:\Program Files\jenkins\jenkins.war" --httpPort=8484
+1360                running             domain1Service.exe
+1380                running             dcrotatelogs.exe    C:\ManageEngine\DesktopCentral_Server\apache\bin\-l C:/ManageEngine/DesktopCentral_Server/logs/apache_errorlog_%Y-%m-%d-%H_%M.txt 5M
+1420                running             elasticsearch-service-x64.exeC:\Program Files\elasticsearch-1.1.1\bin\//RS//elasticsearch-service-x64
+1428                running             conhost.exe         \??\C:\Windows\system32\
+1460                running             svchost.exe
+1480                running             jenkins.exe
+1512                running             cmd.exe                                 /c ""C:/glassfish/glassfish4/glassfish/lib/nadmin.bat"  start-domain --watchdog --domaindir C:\\glassfish\\glassfish4\\glassfish
+1520                running             conhost.exe         \??\C:\Windows\system32\
+1584                running             java.exe                                -jar "C:\glassfish\glassfish4\glassfish\lib\..\modules\admin-cli.jar" start-domain --watchdog --domaindir C:\\glassfish\\glassf
+1608                running             conhost.exe         \??\C:\Windows\system32\
+1724                running             jmx.exe
+1740                running             conhost.exe         \??\C:\Windows\system32\
+1812                running             java.exe
+1824                running             conhost.exe         \??\C:\Windows\system32\
+1856                running             conhost.exe         \??\C:\Windows\system32\
+2016                running             ruby.exe            C:\tools\ruby23\bin\"C:\tools\ruby23\bin\rails" server
+2076                running             cygrunsrv.exe       C:\Program Files\OpenSSH\bin\
+2144                running             svchost.exe
+2168                running             snmp.exe            C:\Windows\System32\
+2176                running             cmd.exe             C:\Windows\system32\/c "C:\Program Files\jmx\start_jmx.bat"
+2188                running             java.exe            C:\openjdk6\openjdk-1.6.0-unofficial-b27-windows-amd64\jre\bin\-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=1617 -Dcom.sun.management.jmxremote.authenticate=false -Dco
+2200                running             conhost.exe         \??\C:\Windows\system32\
+2236                running             conhost.exe         \??\C:\Windows\system32\
+2256                running             tomcat8.exe         C:\Program Files\Apache Software Foundation\tomcat\apache-tomcat-8.0.33\bin\//RS//Tomcat8
+2272                running             conhost.exe         \??\C:\Windows\system32\
+2296                running             sshd.exe            C:\Program Files\OpenSSH\usr\sbin\
+2416                running             httpd.exe
+2576                running             mysqld.exe          c:\wamp\bin\mysql\mysql5.5.20\bin\wampmysqld
+2604                running             conhost.exe         \??\C:\Windows\system32\
+2636                running             svchost.exe         C:\Windows\system32\-k iissvcs
+2672                running             httpd.exe           C:\wamp\bin\apache\apache2.2.21\bin\-d C:/wamp/bin/apache/Apache2.2.21
+2984                running             postgres.exe                            "--forkcol" "9148"
+3028                running             wlms.exe            C:\Windows\system32\wlms\
+3168                running             postgres.exe                            -D "C:/ManageEngine/DesktopCentral_Server/pgsql/data" -p8028
+3240                running             dcserverhttpd.exe   C:\ManageEngine\DesktopCentral_Server\apache\bin\-k runservice
+3364                running             explorer.exe        C:\Windows\
+3404                running             dcnotificationserver.exeC:\ManageEngine\DesktopCentral_Server\bin\-k 8027
+3464                running             conhost.exe         \??\C:\Windows\system32\
+3532                running             wrapper.exe         C:\ManageEngine\DesktopCentral_Server\bin\-s C:\ManageEngine\DesktopCentral_Server\conf\wrapper.conf
+3600                running             cmd.exe                                 /C ""C:/ManageEngine/DesktopCentral_Server/pgsql/bin/postgres.exe" -D "C:/ManageEngine/DesktopCentral_Server/pgsql/data" -p8028
+3640                running             conhost.exe         \??\C:\Windows\system32\
+3652                running             svchost.exe
+3740                running             postgres.exe                            "--forkbackend" "9136"
+3748                running             java.exe
+3792                running             taskhost.exe
+3908                running             conhost.exe         \??\C:\Windows\system32\
+3920                running             sppsvc.exe
+4136                running             msdtc.exe
+4176                running             java.exe            C:\Program Files\Java\jdk1.8.0_121\jre\bin\-classpath C:\Windows\TEMP\~spawn4170850288976817832.tmp.dir metasploit.Payload
+4192                running             conhost.exe         \??\C:\Windows\system32\
+4224                running             DesktopCentral.exe
+4236                running             postgres.exe                            "--forkboot" "9152" "-x4"
+4284                running             postgres.exe                            "--forklog" "9284" "9288"
+4352                running             postgres.exe                            "--forkarch" "9152"
+4400                running             dcserverhttpd.exe   C:\ManageEngine\DesktopCentral_Server\apache\bin\-d C:/ManageEngine/DesktopCentral_Server/apache
+4420                running             java.exe            C:\Program Files\Java\jdk1.8.0_121\jre\bin\-classpath C:\Windows\TEMP\~spawn532083239795056270.tmp.dir metasploit.Payload
+4428                running             conhost.exe         \??\C:\Windows\system32\
+4480                running             dwm.exe             C:\Windows\system32\
+4740                running             postgres.exe                            "--forkavlauncher" "9148"
+4752                running             FJIWa.jsp
+4820                running             postgres.exe                            "--forkboot" "9148" "-x3"
+4832                running             postgres.exe                            "--forkboot" "9152" "-x5"
+4972                running             iexplore.exe        C:\Program Files (x86)\Internet Explorer\-nohome
+4976                running             cmd.exe             C:\Windows\system32\
+5104                running             dcrotatelogs.exe    C:\ManageEngine\DesktopCentral_Server\apache\bin\-l C:/ManageEngine/DesktopCentral_Server/logs/apache_errorlog_%Y-%m-%d-%H_%M.txt 5M
+5112                running             ruby.exe            C:\tools\ruby23\bin\bin/rails server
+6012                running             java.exe            C:\Program Files\Java\jdk1.8.0_121\jre\bin\-classpath C:\Windows\TEMP\~spawn4769948860315549684.tmp.dir metasploit.Payload
+6036                running             iexplore.exe        C:\Program Files (x86)\Internet Explorer\SCODEF:4972 CREDAT:14342
